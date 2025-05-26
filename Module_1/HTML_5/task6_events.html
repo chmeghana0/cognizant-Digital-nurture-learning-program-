@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Feedback</title>
+</head>
+<body>
+
+  <form>
+    <input type="text" id="phone" placeholder="Phone Number" onblur="validatePhone(this)">
+    <br>
+
+    <select onchange="alert('Fee: $' + this.value)">
+      <option value="10">Workshop - $10</option>
+      <option value="0">Free Session</option>
+    </select>
+    <br>
+
+    <button type="button" onclick="alert('Submitted successfully!')">Submit</button>
+    <br>
+
+    <img src="event.jpg" ondblclick="this.style.width='400px'" style="width:200px;">
+    <br>
+
+    <textarea onkeyup="document.getElementById('charCount').innerText = 'Characters: ' + this.value.length"></textarea>
+    <p id="charCount">Characters: 0</p>
+  </form>
+
+  <script>
+    function validatePhone(input) {
+      const valid = /^\d{10}$/.test(input.value);
+      if (!valid) alert("Invalid phone number. Please enter 10 digits.");
+    }
+  </script>
+
+</body>
+</html>
