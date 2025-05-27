@@ -1,4 +1,4 @@
-Low Feedback Alerts:
+
 SELECT u.full_name, e.title, f.rating, f.comments
 FROM Feedback f
 JOIN Users u ON f.user_id = u.user_id
