@@ -1,0 +1,25 @@
+/* Base styles */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+/* Use flexible units */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
