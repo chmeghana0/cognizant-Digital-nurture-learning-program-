@@ -1,0 +1,19 @@
+nav a:link {
+  color: #0077cc;
+}
+nav a:visited {
+  color: purple;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a:active {
+  color: red;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  margin: 5px 0;
+}
