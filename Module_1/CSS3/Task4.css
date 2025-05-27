@@ -1,0 +1,20 @@
+/* Text color using HEX */
+h1 {
+  color: #004488;
+}
+/* Background using RGBA */
+body {
+  background-color: rgba(240, 240, 255, 0.9);
+}
+/* Background image with fallback */
+body {
+  background-color: #eee;
+  background-image: url('background.jpg');
+  background-size: cover;
+}
+/* Gradient on section headers */
+section h2 {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 10px;
+}
